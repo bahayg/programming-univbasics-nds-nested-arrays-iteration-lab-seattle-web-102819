@@ -13,7 +13,6 @@ def find_greater_pair(src)
   array_2 = []
   i = 0 
   while i < src.length do 
-    inner = src[i]
     if src[i][0] > src[i][1]
       array_2 << src[i][0]
     else
