@@ -11,9 +11,9 @@ end
 
 def find_greater_pair(src)
   array_2 = []
-  row_index = 0 
-  element_index = 0 
-  while row_index < src.length do 
+  i = 0 
+  while i < src.length do 
+    inner = src[i]
     if src[row_index][element_index] > src[row_index][element_index+1]
       array_2 << src[row_index][element_index]
     else
