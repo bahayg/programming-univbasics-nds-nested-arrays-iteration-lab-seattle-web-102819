@@ -4,7 +4,7 @@ def join_ingredients(src)
   while i < src.count do
     inner = src[i]
     array_1 << "I love #{inner[0]} and #{inner[1]} on my pizza"
-    row_index += 1 
+    i += 1 
   end
   array_1
 end
