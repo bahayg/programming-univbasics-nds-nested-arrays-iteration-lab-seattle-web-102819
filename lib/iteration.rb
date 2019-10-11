@@ -14,12 +14,12 @@ def find_greater_pair(src)
   i = 0 
   while i < src.length do 
     inner = src[i]
-    if src[row_index][element_index] > src[row_index][element_index+1]
-      array_2 << src[row_index][element_index]
+    if src[i][0] > src[i][1]
+      array_2 << src[i][0]
     else
-      array_2 << src[row_index][element_index+1] 
+      array_2 << src[i][1] 
     end
-    row_index += 1 
+    i += 1 
   end
   array_2
 end
