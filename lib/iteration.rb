@@ -25,12 +25,11 @@ def find_greater_pair(src)
 end
 
 def total_even_pairs(src)
-  array_3 = []
   total = 0 
   row_index = 0 
   element_index = 0 
   while row_index < src.size do 
-    if src[row_index][element_index] % 2 == 0 && src[row_index][element_index+1] % 2 == 0
+    if (src[row_index][element_index] % 2 == 0) && (src[row_index][element_index+1] % 2 == 0)
       total += src[row_index][element_index] + src[row_index][element_index+1]
     end
     row_index += 1 
